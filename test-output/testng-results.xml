@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T23:06:41 IST" name="Default suite" finished-at="2025-02-18T23:06:43 IST" duration-ms="2836">
+  <suite started-at="2025-02-19T01:03:13 IST" name="Default suite" finished-at="2025-02-19T01:03:21 IST" duration-ms="8567">
     <groups>
     </groups>
-    <test started-at="2025-02-18T23:06:41 IST" name="Default test" finished-at="2025-02-18T23:06:43 IST" duration-ms="2836">
+    <test started-at="2025-02-19T01:03:13 IST" name="Default test" finished-at="2025-02-19T01:03:21 IST" duration-ms="8567">
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@52e6fdee]" started-at="2025-02-18T23:06:41 IST" name="setUp" finished-at="2025-02-18T23:06:43 IST" duration-ms="2292" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@6c80d78a]" started-at="2025-02-19T01:03:13 IST" name="setUp" finished-at="2025-02-19T01:03:15 IST" duration-ms="2569" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login_Manager()[pri:0, instance:tests.LoginPageTest@52e6fdee]" started-at="2025-02-18T23:06:43 IST" name="Login_Manager" finished-at="2025-02-18T23:06:43 IST" duration-ms="353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Manager -->
-        <test-method signature="testURL()[pri:0, instance:tests.LoginPageTest@52e6fdee]" started-at="2025-02-18T23:06:43 IST" name="testURL" finished-at="2025-02-18T23:06:43 IST" duration-ms="10" status="PASS">
+        <test-method signature="testURL()[pri:1, instance:tests.LoginPageTest@6c80d78a]" started-at="2025-02-19T01:03:15 IST" name="testURL" finished-at="2025-02-19T01:03:15 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testURL -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@52e6fdee]" started-at="2025-02-18T23:06:43 IST" name="tearDown" finished-at="2025-02-18T23:06:43 IST" duration-ms="145" status="PASS">
+        <test-method signature="Login_Manager()[pri:2, instance:tests.LoginPageTest@6c80d78a]" started-at="2025-02-19T01:03:15 IST" name="Login_Manager" finished-at="2025-02-19T01:03:21 IST" duration-ms="5512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_Manager -->
+        <test-method signature="forgotPass()[pri:3, instance:tests.LoginPageTest@6c80d78a]" started-at="2025-02-19T01:03:21 IST" name="forgotPass" finished-at="2025-02-19T01:03:21 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginPageTest@6c80d78a]" started-at="2025-02-19T01:03:21 IST" name="tearDown" finished-at="2025-02-19T01:03:21 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

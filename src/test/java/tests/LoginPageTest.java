@@ -18,14 +18,14 @@ public class LoginPageTest extends TestBase{
 	LoginPage log;
 	
 	
-	@Test
+	@Test (priority = 1)
 	public void testURL() {
 	String currentDashUrl=driver.getCurrentUrl();
     Assert.assertEquals(currentDashUrl, "https://dev.visit.ictkerala.org/");
     System.out.println("Test:URL Verification passed");
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void Login_Manager() {
 	log = new LoginPage(driver);
 	log.titleCheck();
@@ -33,8 +33,14 @@ public class LoginPageTest extends TestBase{
 	log.enterPassword();
 	log.eye();
 	log.signIn();
+	log.logOut();
 	
 	System.out.println("Test:Manager Login Verification passed");
 	}
 	
+	@Test(priority = 3)
+	public void forgotPass() {
+	log = new LoginPage(driver);
+	log.forgot();
+	}
 }

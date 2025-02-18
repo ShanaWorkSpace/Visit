@@ -38,7 +38,26 @@ public class LoginPage{
 		 WebElement signin = driver.findElement(By.xpath("//button[contains(text(),'Sign In') and contains(@class, 'bg-[#32b1dc]')]"));
 		 signin.click();
 	 }
-	 
+	 public void logOut() {
+		 WebElement Profile = driver.findElement(By.cssSelector("img.w-full"));
+		 Profile.click();
+		 WebElement signout = driver.findElement(By.cssSelector("svg.icon"));
+		 signout.click();
+	 }
+	 public void forgot() {
+		 WebElement link = driver.findElement(By.xpath("//p[contains(@class, 'text-[#32b1dc]') and normalize-space(text())='Forgotpassword?']"));
+		 link.click();
+		 WebElement title = driver.findElement(By.xpath("//h3[contains(text(), 'Forgot Your Password')]"));
+		 title.getText();
+		 WebElement emailfp = driver.findElement(By.xpath("//input[@name='email' and @type='text']"));
+		 emailfp.sendKeys("reshravi1234@gmail.com");
+		 WebElement next = driver.findElement(By.xpath("//button[contains(@class, 'bg-[#1A73E8]')]"));
+		 next.click();
+		 WebElement text= driver.findElement(By.xpath("//p[contains(text(),'If your email is registered')]"));
+		 text.getText();
+		 WebElement close=driver.findElement(By.xpath("//button[contains(text(),'Close')]"));
+		 close.click();
+	 }
 }
 
 
